@@ -13,6 +13,8 @@
 		AAC498E729A137B200698F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC498E529A137B200698F87 /* Main.storyboard */; };
 		AAC498E929A137B200698F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC498E829A137B200698F87 /* Assets.xcassets */; };
 		AAC498EC29A137B200698F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC498EA29A137B200698F87 /* LaunchScreen.storyboard */; };
+		AAC498F629A1707400698F87 /* ConverterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC498F529A1707400698F87 /* ConverterLogic.swift */; };
+		AAC498FA29A18CF800698F87 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC498F929A18CF800698F87 /* ConverterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AAC498E829A137B200698F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC498EB29A137B200698F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC498ED29A137B200698F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC498F529A1707400698F87 /* ConverterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterLogic.swift; sourceTree = "<group>"; };
+		AAC498F929A18CF800698F87 /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				AAC498DF29A137B200698F87 /* AppDelegate.swift */,
 				AAC498E129A137B200698F87 /* SceneDelegate.swift */,
-				AAC498E329A137B200698F87 /* ViewController.swift */,
+				AAC498F429A16FE400698F87 /* Model */,
+				AAC498F329A16FDC00698F87 /* View */,
 				AAC498E529A137B200698F87 /* Main.storyboard */,
 				AAC498E829A137B200698F87 /* Assets.xcassets */,
 				AAC498EA29A137B200698F87 /* LaunchScreen.storyboard */,
 				AAC498ED29A137B200698F87 /* Info.plist */,
 			);
 			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		AAC498F329A16FDC00698F87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAC498E329A137B200698F87 /* ViewController.swift */,
+				AAC498F929A18CF800698F87 /* ConverterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAC498F429A16FE400698F87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAC498F529A1707400698F87 /* ConverterLogic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC498E429A137B200698F87 /* ViewController.swift in Sources */,
+				AAC498F629A1707400698F87 /* ConverterLogic.swift in Sources */,
 				AAC498E029A137B200698F87 /* AppDelegate.swift in Sources */,
+				AAC498FA29A18CF800698F87 /* ConverterView.swift in Sources */,
 				AAC498E229A137B200698F87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
